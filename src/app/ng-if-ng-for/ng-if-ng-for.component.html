@@ -1,0 +1,14 @@
+<input value="{{buttonMessage}}" type="button" (click)='disappear()' />
+<h1 *ngIf='viewFlag'>Flag oculta</h1>
+
+<hr>
+
+<h1> Laço de Repetição </h1>
+<p *ngFor='let n of myArray'> {{ n }}</p>
+
+<hr>
+
+<h1> Laço de Repetição com If </h1>
+<p *ngFor='let n of myArray'>
+    <span *ngIf='n <= 6'> {{ n }}</span> <br>
+</p>
